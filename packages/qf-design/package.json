@@ -1,15 +1,24 @@
 {
   "name": "qf-design",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "",
   "main": "lib/index.mjs",
   "module": "es/index.mjs",
-  "files": ["es", "lib"],
-  "sideEffects": ["**/*.css"],
+  "files": [
+    "es",
+    "lib"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["qf-design", "vue3", "typescript"],
+  "keywords": [
+    "qf-design",
+    "vue3",
+    "typescript"
+  ],
   "author": "wangkai",
   "typings": "lib/indx.d.ts",
   "license": "MIT",
