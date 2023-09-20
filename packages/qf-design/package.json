@@ -12,5 +12,9 @@
   "keywords": ["qf-design", "vue3", "typescript"],
   "author": "wangkai",
   "typings": "lib/indx.d.ts",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qf-design/qf-design.git"
+  }
 }
