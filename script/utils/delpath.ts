@@ -33,4 +33,4 @@ const delPath = async (path: string) => {
   }
 };
 
-export default delPath
+export default delPath;

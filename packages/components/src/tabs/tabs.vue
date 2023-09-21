@@ -4,5 +4,5 @@
 
 <script setup lang="ts">
 defineOptions({ name: "qf-tabs" });
-import './style/index.less'
+import "./style/index.less";
 </script>

@@ -9,7 +9,7 @@
   </button>
 </template>
 <script setup lang="ts">
-import './style/index.less';
+import "./style/index.less";
 defineOptions({ name: "qf-button" });
 
 defineProps<{

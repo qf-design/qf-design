@@ -7,7 +7,10 @@ type SFCWithIntall<T> = T & Plugin;
  * @param main 组件对象，通常是一个vue组件，比如我们的Button
  * @param extra 可选的额外组件对象，以键值对存储
  */
-export const withIntall = <T, E extends Record<string, any>>(main: T, extra?: E) => {
+export const withIntall = <T, E extends Record<string, any>>(
+  main: T,
+  extra?: E,
+) => {
   /**
    * 将install方法 添加到主要组件对象上
    */
@@ -31,5 +34,5 @@ export const withIntall = <T, E extends Record<string, any>>(main: T, extra?: E)
     }
   }
 
-  return main as SFCWithIntall<T> & E
+  return main as SFCWithIntall<T> & E;
 };

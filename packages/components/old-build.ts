@@ -19,7 +19,7 @@ export default defineConfig({
     lib: {
       entry: "./index.ts",
       name: "qf",
-      fileName: 'qf',
+      fileName: "qf",
       formats: ["es", "umd", "cjs"],
     },
   },

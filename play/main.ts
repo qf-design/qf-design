@@ -1,9 +1,9 @@
-import { createApp } from 'vue'
-import App from './app.vue'
-import QfDesign from '@qf/components'
+import { createApp } from "vue";
+import App from "./app.vue";
+import QfDesign from "@qf/components";
 
-const app = createApp(App)
+const app = createApp(App);
 
-app.use(QfDesign)
+app.use(QfDesign);
 
-app.mount('#app')
+app.mount("#app");
