@@ -11,6 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     # 生产环境
     environment: production
-    setps:
+    steps:
       - name: hello
         run: echo '你好'
