@@ -6,6 +6,7 @@
   "scripts": {
     "build:components": "gulp -f script/build/build-components.ts",
     "publish:components": "gulp -f script/publish/index.ts",
+    "dev:docs": "pnpm run --filter docs dev",
     "lint": "eslint --ext .vue,.ts --quiet ./",
     "prepare": "husky install",
     "commit": "cz"
@@ -31,6 +32,8 @@
     "@types/node": "^20.6.2",
     "@typescript-eslint/eslint-plugin": "^6.7.2",
     "@typescript-eslint/parser": "^6.7.2",
+    "@vitepress-demo-preview/component": "^2.3.2",
+    "@vitepress-demo-preview/plugin": "^1.2.2",
     "@vue/runtime-core": "^3.3.4",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",

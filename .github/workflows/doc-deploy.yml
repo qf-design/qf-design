@@ -1,0 +1,16 @@
+# 显示的workflow
+name: Doc Deploy
+
+on:
+  # 推送到main 开始打包
+  push:
+    branches:
+      - main
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    # 生产环境
+    environment: production
+    setps:
+      - name: hello
+        run: echo '你好'
