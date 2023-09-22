@@ -15,7 +15,7 @@ jobs:
       - name: Checkout code 😄
       # 迁出触发的流程的版本 能让下面的工作流程访问 v2 可以在不同的任务中访问
         uses: actions/checkout@v2
-        width:
+        with:
           node: 16.14
       - name: Install dependencies 🤔
         run: | 
@@ -24,8 +24,8 @@ jobs:
         run: pnpm run build:components
       - name: Build Docs
         run: pnpm run build:docs
-      - name: deploy
+      - name: deploy 😄
         uses: JamesIves/github-pages-deploy-action@v4.2.3
-        width:
+        with:
           branch: 'gh-pages',
           folder: docs/.vitepress/dist
