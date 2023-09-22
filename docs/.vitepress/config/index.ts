@@ -5,6 +5,7 @@ import { containerPreview, componentPreview } from '@vitepress-demo-preview/plug
 
 export default {
   title: "Qf Design 官方文档",
+  base: process.env.NODE_ENV === 'production' ? '/qf-design/' : '/',
   head: [
     ['link', {rel: 'icon', href: '/logo.ico'}]
   ],
