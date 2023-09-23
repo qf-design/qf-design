@@ -1,19 +1,21 @@
+
+
 const getNavs = () => [
   {
     text: "指南",
-    link: "/guide/introduce",
-    activeMatch: "/guide/",
+    activeMath: '/guide/',
+    link: "/guide/introduce"
   },
   {
     text: "组件",
-    link: "/components/button/button",
-    activeMatch: "/components/",
+    activeMath: '/components/',
+    link: "/components/button/button"
   },
   {
     text: "资源",
-    link: "/resource/index",
-    activeMatch: "/resource/",
+    activeMath: '/resource/',
+    link: "/resource/index"
   },
-];
+]
 
 export const nav = getNavs()
