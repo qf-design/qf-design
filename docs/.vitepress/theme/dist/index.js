@@ -51,19 +51,10 @@ var theme_1 = require("vitepress/theme");
 var qf_design_1 = require("qf-design");
 var component_1 = require("@vitepress-demo-preview/component");
 require("@vitepress-demo-preview/component/dist/style.css");
-var components = require("./../../component");
-console.log(components);
 exports["default"] = __assign(__assign({}, theme_1["default"]), { enhanceApp: function (ctx) { return __awaiter(void 0, void 0, void 0, function () {
-        var c;
         return __generator(this, function (_a) {
-            // app is the Vue 3 app instance from `createApp()`. router is VitePress'
-            // custom router. `siteData`` is a `ref`` of current site-level metadata.
-            ctx.app.use(qf_design_1["default"]);
             ctx.app.component('demo-preview', component_1.NaiveUIContainer);
-            // ctx.app.component('ex-tabs', exTabs)
-            for (c in components) {
-                ctx.app.component(components[c]);
-            }
+            ctx.app.use(qf_design_1["default"]);
             return [2 /*return*/];
         });
     }); } });
