@@ -6,8 +6,8 @@ const getNavs = () => [
   },
   {
     text: "组件",
-    link: "/component/button/index",
-    activeMatch: "/component/",
+    link: "/components/button/button",
+    activeMatch: "/components/",
   },
   {
     text: "资源",

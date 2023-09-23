@@ -57,13 +57,13 @@ const getSidebar = () => {
         ],
       },
     ],
-    "/component/": [
+    "/components/": [
       {
         text: "基础组件",
         items: [
           {
             text: "Button 按钮",
-            link: "/component/button/index",
+            link: "/components/button/index",
           },
         ],
       },
@@ -72,7 +72,7 @@ const getSidebar = () => {
         items: [
           {
             text: "Input 输入框",
-            link: "/component/input",
+            link: "/components/input",
           },
         ],
       },
@@ -81,7 +81,7 @@ const getSidebar = () => {
         items: [
           {
             text: "Card 卡片",
-            link: "/component/button",
+            link: "/components/button",
           },
         ],
       },
@@ -90,7 +90,7 @@ const getSidebar = () => {
         items: [
           {
             text: "Tabs 标签页",
-            link: "/component/tabs/index",
+            link: "/components/tabs/index",
           },
         ],
       },
@@ -99,7 +99,7 @@ const getSidebar = () => {
         items: [
           {
             text: "Message 消息提示",
-            link: "/component/button",
+            link: "/components/button",
           },
         ],
       },

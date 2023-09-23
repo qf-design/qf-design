@@ -12,8 +12,6 @@ exports["default"] = {
     ],
     themeConfig: {
         logo: '/logo2.png',
-        logoSmall: 'logo2.png',
-        title: 'qf design test',
         nav: nav_1.nav,
         sidebar: sidebar_1.sidebar,
         socialLinks: [
@@ -35,31 +33,10 @@ exports["default"] = {
         pt: { label: 'Português' },
         ko: { label: '한국어' }
     },
-    // markdown: {
-    //   theme: {
-    //     light: 'vitesse-light',
-    //     dark: 'vitesse-dark'
-    //   }
-    // },
     markdown: {
         config: function (md) {
             md.use(plugin_1.containerPreview);
             md.use(plugin_1.componentPreview);
         }
-    },
-    // vite: {
-    //   plugins: [
-    //     SearchPlugin({
-    //       previewLength: 62,
-    //       buttonLabel: 'Search',
-    //       placeholder: 'Search docs',
-    //       allow: [],
-    //       ignore: []
-    //     })
-    //   ]
-    // },
-    footer: {
-        message: 'Released under the MIT License.',
-        copyright: 'Copyright © 2022-present 君惜'
     }
 };
