@@ -2,6 +2,7 @@ import { NaiveUIContainer } from '@vitepress-demo-preview/component'
 import '@vitepress-demo-preview/component/dist/style.css'
 import DefaultTheme from 'vitepress/theme'
 import qfDesign from 'qf-design'
+import button from './../../components/button/example.vue'
 
 export default {
   ...DefaultTheme,
