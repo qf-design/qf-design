@@ -1,6 +1,5 @@
 <template>
   <div>
-    <qf-button type="primary">啊啊啊</qf-button>
     <qf-tabs
       v-model:activeKey="num"
       :data="[
@@ -24,7 +23,6 @@
       :width="300"
     ></qf-tabs>
   </div>
-  <!-- <Button></Button> -->
 </template>
 <script setup lang="ts">
 import { ref } from "vue";

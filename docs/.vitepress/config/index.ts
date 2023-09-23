@@ -3,14 +3,16 @@ import { nav } from './nav'
 import { sidebar } from './sidebar'
 import { containerPreview, componentPreview } from '@vitepress-demo-preview/plugin'
 
+const base = process.env.NODE_ENV === 'production' ? '/qf-design/' : '/'
+
 export default {
   title: "Qf Design 官方文档",
-  base: process.env.NODE_ENV === 'production' ? '/qf-design/' : '/',
+  base,
   head: [
-    ['link', {rel: 'icon', href: '/logo.ico'}]
+    ['link', {rel: 'icon', href: `${base}logo.ico`}]
   ],
   themeConfig: {
-    logo: "/logo.ico",
+    logo: `${base}logo.ico`,
     nav,
     sidebar,
     // 搜索

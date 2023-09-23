@@ -1,6 +1,6 @@
 export interface Tab {
   /** 标题 */
-  label: string;
-  /** 值 */
-  value: string;
+  title: string;
+  /** key */
+  value: any;
 }
