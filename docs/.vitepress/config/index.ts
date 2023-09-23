@@ -4,7 +4,7 @@ import { containerPreview, componentPreview } from '@vitepress-demo-preview/plug
 
 
 export default {
-  base: process.env.NODE_ENV === 'production' ? '/qf-design-test/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/qf-design/' : '/',
   title: 'Qf Design 官方文档',
   head: [
     // 添加以下行来配置网站图标
