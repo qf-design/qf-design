@@ -2,6 +2,8 @@
 
 ## 基础用法
 
+<qf-button>按钮</qf-button>
+
 使用  type 来定义按钮的样式
 <preview path="./example.vue" ></preview>
 
