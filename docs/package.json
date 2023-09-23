@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "qf-design": "workspace:^",
-    "vitepress": "1.0.0-rc.15"
+    "vitepress": "1.0.0-rc.15",
+    "vue": "^3.2.36"
   }
 }

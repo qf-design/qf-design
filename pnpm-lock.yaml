@@ -110,10 +110,13 @@ importers:
     dependencies:
       qf-design:
         specifier: workspace:^
-        version: link:../packages/qf-design
+        version: link:..
       vitepress:
         specifier: 1.0.0-rc.15
         version: 1.0.0-rc.15(@algolia/client-search@4.20.0)(@types/node@20.6.3)(less@4.2.0)(search-insights@2.8.2)
+      vue:
+        specifier: ^3.2.36
+        version: 3.3.4
 
   packages/components: {}
 
