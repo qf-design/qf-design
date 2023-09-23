@@ -1,4 +1,3 @@
-export * from "./src";
 import { App } from "vue";
 import { Button, Tabs } from "./src";
 

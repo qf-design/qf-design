@@ -1,36 +1,32 @@
 import fs from "fs";
 import { resolve } from "path";
 import { pkgPath } from "./paths";
-
-// 保留文件
+//保留的文件
 const stayFile = ["package.json", "README.md"];
 
-/**
- * 删除指定路径下的文件
- */
-
 const delPath = async (path: string) => {
-  let files = [];
+  let files: string[] = [];
   if (fs.existsSync(path)) {
     files = fs.readdirSync(path);
 
     files.forEach(async (file) => {
       const curPath = resolve(path, file);
       if (fs.statSync(curPath).isDirectory()) {
-        if (file != "node_modules") {
-          await delPath(curPath);
-        }
+        // recurse
+        if (file != "node_modules") await delPath(curPath);
       } else {
+        // delete file
         if (!stayFile.includes(file)) {
           fs.unlinkSync(curPath);
         }
       }
     });
 
+    console.log(path, "啊啊啊啊");
+
     if (path !== `${pkgPath}/qf-design`) {
       fs.rmdirSync(path);
     }
   }
 };
-
 export default delPath;

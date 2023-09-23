@@ -1,14 +1,15 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
-
 export default defineConfig({
   build: {
+    //打包后文件目录
     outDir: "es",
-    // 是否压缩
+    //压缩
     minify: false,
     rollupOptions: {
-      // 忽略打包vue文件
+      //忽略打包vue文件
       external: ["vue"],
+      //input: ["index.ts"],
       output: {
         globals: {
           vue: "Vue",

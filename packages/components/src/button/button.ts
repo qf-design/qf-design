@@ -1,4 +1,5 @@
+// import { ExtractPropTypes } from 'vue'
+
 export interface ButtonProps {
-  /** 按钮类型 */
-  type?: "primary" | "default";
+  type: "primary" | "default";
 }

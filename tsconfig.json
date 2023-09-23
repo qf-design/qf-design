@@ -7,8 +7,8 @@
     "module": "ESNext",
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "moduleResolution": "Node",
-    "lib": ["ESNext", "DOM"],
+    "moduleResolution": "node",
+    "lib": ["esnext", "dom"],
     "types": ["unplugin-vue-define-options/macros-global"]
   }
 }

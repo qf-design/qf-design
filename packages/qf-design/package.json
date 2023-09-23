@@ -6,7 +6,7 @@
   "type": "module",
   "module": "es/index.mjs",
   "keywords": [
-    "qf-design"
+    "qf-design-test"
   ],
   "sideEffects": [
     "**/*.css"

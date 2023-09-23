@@ -1,12 +1,10 @@
 import run from "../utils/run";
-import { pkgPath } from "./../utils/paths";
+import { pkgPath } from "../utils/paths";
 import { series } from "gulp";
-import buildComponents from "../build/build-components";
+import buildComponent from "../build/build-components";
 
-// 组件库发布
-export const publblishComponents = async () => {
-  console.log("组件库发布 🚀");
+export const publishComponents = async () => {
   run("release-it", `${pkgPath}/qf-design/`);
 };
 
-export default series(buildComponents, publblishComponents);
+export default series(buildComponent, publishComponents);

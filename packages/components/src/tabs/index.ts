@@ -1,7 +1,5 @@
-import { withIntall } from "./../../utils";
-import Tabs from "./tabs.vue";
-//
+import { withInstall } from "./../../utils";
+import _Tabs from "./tabs.vue";
 
-export { Tabs };
-
-export default withIntall(Tabs);
+export const Tabs = withInstall(_Tabs);
+export default Tabs;
