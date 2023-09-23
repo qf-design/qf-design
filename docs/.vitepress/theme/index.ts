@@ -1,5 +1,5 @@
 import DefaultTheme from 'vitepress/theme';
-import qfDesignTest from 'qf-design-test';
+import qfDesign from 'qf-design';
 import { NaiveUIContainer } from '@vitepress-demo-preview/component'
 import '@vitepress-demo-preview/component/dist/style.css'
 import exTabs from './../../component/tabs/tabs.vue'
@@ -10,7 +10,7 @@ export default {
   enhanceApp: async (ctx: any) => {
     // app is the Vue 3 app instance from `createApp()`. router is VitePress'
     // custom router. `siteData`` is a `ref`` of current site-level metadata.
-    ctx.app.use(qfDesignTest);
+    ctx.app.use(qfDesign);
     ctx.app.component('demo-preview', NaiveUIContainer)
     // ctx.app.component('ex-tabs', exTabs)
 
