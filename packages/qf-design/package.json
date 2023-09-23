@@ -1,27 +1,23 @@
 {
   "name": "qf-design",
-  "version": "0.2.1",
+  "version": "0.5.0",
   "description": "",
-  "main": "lib/index.mjs",
+  "main": "lib/index.js",
+  "type": "module",
   "module": "es/index.mjs",
-  "files": [
-    "es",
-    "lib"
+  "keywords": [
+    "qf-design"
   ],
   "sideEffects": [
     "**/*.css"
   ],
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "qf-design",
-    "vue3",
-    "typescript"
+  "files": [
+    "es",
+    "lib"
   ],
-  "author": "wangkai",
-  "typings": "lib/indx.d.ts",
-  "license": "MIT",
+  "typings": "lib/index.d.ts",
+  "author": "王凯",
+  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "https://github.com/qf-design/qf-design.git"
