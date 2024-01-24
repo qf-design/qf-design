@@ -1,18 +1,23 @@
 <template>
   <button
+    v-bind="_props"
     class="qf-button"
-    :class="{ 'qf-button--primary': type === 'primary' }"
+    :class="[
+      type ? `qf-button--${type}` : '',
+      { 'qf-button--disabled': disabled },
+    ]"
   >
     <slot></slot>
   </button>
 </template>
 <script lang="ts" setup>
-import "./style/index.less";
+import type { ButtonProps } from "./button";
+import { useButton } from "./use-button";
 
 // 在tsconfig type 中定义 unplugin-vue-define-options/macros-global
 defineOptions({ name: "qf-button" });
 
-defineProps<{
-  type?: "primary" | "default";
-}>();
+const props = defineProps<ButtonProps>();
+
+const { _props } = useButton(props);
 </script>

@@ -12,3 +12,7 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 exports.__esModule = true;
 __exportStar(require("./button"), exports);
 __exportStar(require("./tabs"), exports);
+__exportStar(require("./row"), exports);
+__exportStar(require("./col"), exports);
+__exportStar(require("./checkbox"), exports);
+__exportStar(require("./input"), exports);

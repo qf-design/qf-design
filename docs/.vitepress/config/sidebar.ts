@@ -67,6 +67,10 @@ const getSidebar = () => {
           {
             text: "Button 按钮",
             link: "/components/button/button"
+          },
+          {
+            text: "Layout 布局",
+            link: "/components/layout/index"
           }
         ]
       },
@@ -76,7 +80,11 @@ const getSidebar = () => {
           {
             text: "Input 输入框",
             link: "/components/input/input"
-          }
+          },
+          {
+            text: "Checkbox 多选框",
+            link: "/components/checkbox/index"
+          },
         ]
       },
       {

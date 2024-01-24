@@ -1,0 +1,16 @@
+@row: 24;
+
+.qf-col {
+  border-radius: var(--col-border-radius);
+
+  each(range(@row), {
+    &-@{value} {
+      flex: 0 0 percentage((@value / @row));
+      max-width: percentage((@value / @row));
+    }
+
+    &--offset-@{value} {
+      margin-left: percentage((@value / @row));
+    }
+  })
+}

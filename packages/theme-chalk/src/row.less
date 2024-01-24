@@ -1,0 +1,23 @@
+@justify-options: 'start', 'end', 'center', 'space-around', 'space-between', 'space-evenly';
+
+.qf-row {
+  display: flex;
+
+  each(@justify-options, {
+      &--justify-@{value} {
+        justify-content: @value;
+      }
+    }
+
+  ) &--align-top {
+    align-items: start;
+  }
+
+  &--align-middle {
+    align-items: center;
+  }
+
+  &--align-bottom {
+    align-items: end;
+  }
+}

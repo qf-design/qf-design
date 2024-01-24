@@ -1,0 +1,1 @@
+.qf-tabs{display:flex;align-items:center;margin:20px 0;border-bottom:1px solid #d9d9dd;height:40px;position:relative}.qf-tabs_item{cursor:pointer;height:100%;text-align:center;color:#303133;width:100%}.qf-tabs__select{height:3px;background:var(--active-bg-color);position:absolute;bottom:0;transition:all .5s}

@@ -11,10 +11,10 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /guide/getting-started
+      link: /guide/introduce
     - theme: alt
       text: View on GitHub
-      link: https://github.com/vuejs/vitepress
+      link: https://github.com/qf-design/qf-design
   image:
     src: /logo2.png
     alt: Qf Design

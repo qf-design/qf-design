@@ -8,4 +8,6 @@ export const pkgPath = resolve(__dirname, "../../packages/");
 
 export const basePath = resolve(__dirname, "../../");
 
+export const themePath = resolve(__dirname, "../../packages/theme-chalk/");
+
 export const docsPath = resolve(__dirname, "../../docs");

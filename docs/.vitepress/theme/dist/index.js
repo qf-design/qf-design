@@ -51,6 +51,7 @@ var theme_1 = require("vitepress/theme");
 var qf_design_1 = require("qf-design");
 var component_1 = require("@vitepress-demo-preview/component");
 require("@vitepress-demo-preview/component/dist/style.css");
+require("qf-design/index.css");
 exports["default"] = __assign(__assign({}, theme_1["default"]), { enhanceApp: function (ctx) { return __awaiter(void 0, void 0, void 0, function () {
         return __generator(this, function (_a) {
             ctx.app.component('demo-preview', component_1.NaiveUIContainer);
