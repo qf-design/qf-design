@@ -1,0 +1,32 @@
+.qf-card {
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.12);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--card-border-color, var(--border-color));
+  border-radius: var(--border-radius);
+}
+.qf-card--never {
+  box-shadow: none;
+}
+.qf-card--hover {
+  box-shadow: none;
+}
+.qf-card--hover:hover {
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.12);
+}
+.qf-card__content {
+  padding: 8px 10px;
+}
+.qf-card__footer,
+.qf-card__header {
+  padding: 8px 10px;
+  border-color: var(--card-border-color, var(--border-color));
+  border-style: solid;
+  border-width: 0;
+}
+.qf-card__footer {
+  border-top-width: 1px;
+}
+.qf-card__header {
+  border-bottom-width: 1px;
+}

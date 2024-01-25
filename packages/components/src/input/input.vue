@@ -33,7 +33,7 @@
 <script setup lang="ts">
 import { InputProps } from "./input";
 import { useInput } from "./use-input";
-import { defineModel } from 'vue'
+import { defineModel } from "vue";
 
 defineOptions({
   name: "qf-input",

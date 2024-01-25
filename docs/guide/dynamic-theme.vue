@@ -8,7 +8,6 @@
 <script lang="ts" setup>
 import { ref } from "vue";
 const checkedList = ref(["option1"]);
-
 const handleChange = (vals: string[]) => {
   console.log("checked", vals);
 };

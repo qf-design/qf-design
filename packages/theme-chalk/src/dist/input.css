@@ -1,0 +1,32 @@
+.qf-input {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 11px;
+  background-color: var(--input-bg-color);
+  border-radius: var(--input-border-radius);
+  cursor: text;
+  box-shadow: 0 0 0 1px var(--input-border-color);
+}
+.qf-input__inner {
+  flex-grow: 1;
+  margin: 4;
+  width: 100%;
+}
+.qf-input__close {
+  display: none;
+}
+.qf-input__inner:focus + .qf-input__close {
+  display: block;
+  z-index: 99;
+}
+.qf-input--focus {
+  --input-border-color: var(--active-border-color);
+}
+.qf-input--disabled {
+  --input-border-color: var(--disabled-color);
+  --input-bg-color: var(--disabled-bg-color);
+}
+.qf-input--disabled .qf-input__inner {
+  cursor: not-allowed;
+}

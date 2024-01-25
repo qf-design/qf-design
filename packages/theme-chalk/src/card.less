@@ -1,0 +1,37 @@
+.qf-card {
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, .12);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--card-border-color, var(--border-color));
+  border-radius: var(--border-radius);
+
+  &--never {
+    box-shadow: none;
+  }
+
+  &--hover {
+    box-shadow: none;
+    &:hover {
+      box-shadow: 0px 0px 12px rgba(0, 0, 0, .12);
+    }
+  }
+
+  &__content {
+    padding: 8px 10px;
+  }
+
+  &__footer,&__header {
+    padding: 8px 10px;
+    border-color: var(--card-border-color, var(--border-color));
+    border-style: solid;
+    border-width: 0;
+  }
+
+  &__footer {
+    border-top-width: 1px;
+  }
+
+  &__header {
+    border-bottom-width: 1px;
+  }
+}

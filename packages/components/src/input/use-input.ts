@@ -42,8 +42,10 @@ export const useInput = (
 
   // 点击清空
   const onClose = () => {
+    console.log("没触发111？？");
     // 点击关闭按钮是，清空输入框的值
     selfModel.value = "";
+    console.log("没触发？？");
   };
 
   // 聚焦事件
@@ -58,6 +60,7 @@ export const useInput = (
   const onBlur = () => {
     // 输入框失去焦点 更新焦点状态为false
     isFocus.value = false;
+
     // 通知 父组件输入框失去焦点 触发 blur事件
     emit("blur");
   };

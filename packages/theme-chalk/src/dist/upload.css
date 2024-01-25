@@ -1,0 +1,23 @@
+.qf-upload__input {
+  display: none;
+}
+.qf-upload__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.qf-upload__item:hover {
+  color: var(--upload-item-active-font-color);
+}
+.qf-upload__item:hover .qf-upload__close {
+  display: block;
+}
+.qf-upload__close {
+  display: none;
+}
+.qf-upload__item-inner {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}

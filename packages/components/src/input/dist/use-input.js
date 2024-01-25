@@ -6,7 +6,7 @@ exports.useInput = function (props, model, emit) {
     // 拿到禁用和可关闭的状态
     var disabled = props.disabled, closable = props.closable;
     // 内部维护的输入框的值
-    var selfModel = vue_1.ref('');
+    var selfModel = vue_1.ref("");
     // 是否聚焦状态
     var isFocus = vue_1.ref(false);
     vue_1.onMounted(function () {
@@ -19,35 +19,37 @@ exports.useInput = function (props, model, emit) {
     vue_1.watch(selfModel, function (val) {
         model.value = val;
         // 抛出change事件，通知父组件输入框值发生变
-        emit('change', val);
+        emit("change", val);
     });
     var classList = vue_1.computed(function () {
         return [
             // 输入框基础样式
-            'qf-input',
+            "qf-input",
             // 如果输入框禁用，则 添加禁用样式
-            disabled ? 'qf-input--disabled' : '',
+            disabled ? "qf-input--disabled" : "",
             // 如果输入框获得焦点，则添加焦点样式
-            isFocus.value ? 'qf-input--focus' : ''
+            isFocus.value ? "qf-input--focus" : "",
         ];
     });
     // 点击清空
     var onClose = function () {
+        console.log("没触发111？？");
         // 点击关闭按钮是，清空输入框的值
-        selfModel.value = '';
+        selfModel.value = "";
+        console.log("没触发？？");
     };
     // 聚焦事件
     var onFocus = function () {
         // 输入框获得焦点时，更新焦点状态为true
         isFocus.value = true;
         // 触发 focus 事件 通知父组件输入框获取焦点
-        emit('focus');
+        emit("focus");
     };
     var onBlur = function () {
         // 输入框失去焦点 更新焦点状态为false
         isFocus.value = false;
         // 通知 父组件输入框失去焦点 触发 blur事件
-        emit('blur');
+        emit("blur");
     };
     return {
         selfModel: selfModel,

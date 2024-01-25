@@ -16,3 +16,6 @@ __exportStar(require("./row"), exports);
 __exportStar(require("./col"), exports);
 __exportStar(require("./checkbox"), exports);
 __exportStar(require("./input"), exports);
+__exportStar(require("./card"), exports);
+__exportStar(require("./switch"), exports);
+__exportStar(require("./upload"), exports);

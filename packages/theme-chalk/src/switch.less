@@ -1,0 +1,106 @@
+.qf-switch {
+  display: inline-flex;
+  align-items: center;
+  min-width: 48px;
+
+  &__input {
+      display: none;
+  }
+
+  &__inner {
+      position: relative;
+      background-color: var(--switch-inactive-bg-color);
+      border: 1px solid var(--switch-border-color, --switch-inactive-bg-color);
+      border-radius: 20px;
+      height: 24px;
+      flex-grow: 1;
+      display: inline-flex;
+      align-items: center;
+
+      .active-text {
+          margin: 0 28px 0 8px;
+          color: #fff;
+      }
+
+      .inactive-text {
+          margin: 0 8px 0 4px;
+          color: #fff;
+      }
+  }
+
+  &__slider {
+      position: relative;
+      left: 2px;
+      background-color: var(--switch-slider-bg-color);
+      border-radius: 100%;
+      width: 20px;
+      height: 20px;
+      transition: all .4s;
+
+      svg {
+          width: 20px;
+          transform-origin: center;
+          animation: rotate 2s linear infinite;
+      }
+
+      circle {
+          fill: none;
+          stroke: rgba(0, 0, 0, .7);
+          stroke-width: 2;
+          stroke-dasharray: 1, 200;
+          stroke-dashoffset: 0;
+          stroke-linecap: round;
+          animation: dash 1.5s ease-in-out infinite;
+      }
+
+      @keyframes rotate {
+          100% {
+              transform: rotate(360deg);
+          }
+      }
+
+      @keyframes dash {
+          0% {
+              stroke-dasharray: 1, 200;
+              stroke-dashoffset: 0;
+          }
+
+          50% {
+              stroke-dasharray: 90, 200;
+              stroke-dashoffset: -35px;
+          }
+
+          100% {
+              stroke-dashoffset: -125px;
+          }
+      }
+
+  }
+
+  &--checked {
+
+      .qf-switch__slider {
+          position: absolute;
+          left: calc(100% - 22px);
+      }
+
+      .qf-switch__inner {
+          background-color: var(--switch-active-bg-color);
+          border-color: var(--switch-border-color, --switch-active-bg-color);
+      }
+  }
+
+  &--disabled {
+      --switch-border-color: var(--disabled-color);
+      --switch-inactive-bg-color: var(--disabled-bg-color);
+      --switch-slider-bg-color: var(--disabled-color);
+
+      &__inner {
+          cursor: not-allowed;
+      }
+  }
+
+  &--loading {
+      opacity: 0.6;
+  }
+}

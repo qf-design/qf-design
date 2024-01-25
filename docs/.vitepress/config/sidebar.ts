@@ -85,6 +85,14 @@ const getSidebar = () => {
             text: "Checkbox 多选框",
             link: "/components/checkbox/index"
           },
+          {
+            text: "Switch 开关",
+            link: "/components/switch/index"
+          },
+          {
+            text: "Upload 上传",
+            link: "/components/upload/index"
+          },
         ]
       },
       {
